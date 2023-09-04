@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: web-nginx
-  namespace: nginx
+  namespace: web-nginx
   annotations:
     clusterconfig.azure.com/use-managed-source: "true"
 spec:
@@ -12,7 +12,7 @@ spec:
       chart: charts/web-nginx
       sourceRef:
         kind: GitRepository
-        name: flux-config-01
+        name: flux-config-03
         namespace: web-nginx
       interval: 1m
   values:
