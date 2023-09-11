@@ -14,9 +14,6 @@ spec:
         kind: GitRepository
         name: flux-config-02
         namespace: app-nginx
+      valuesFile: uat-values/app-value.yml  
       interval: 1m
-  valuesFrom:
-  - kind: ConfigMap
-    name: prod-env-values
-    valuesKey: uat-values/app-value.yml
 
