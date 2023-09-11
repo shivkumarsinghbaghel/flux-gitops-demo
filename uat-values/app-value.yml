@@ -1,0 +1,3 @@
+image: 
+    repository: acreastus01.azurecr.io/nginx
+    tag: 1.0.2
