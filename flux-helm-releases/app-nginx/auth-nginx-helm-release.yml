@@ -17,25 +17,3 @@ spec:
         namespace: app-nginx
       valuesFiles: 
       - uat-values/auth-value.yml
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
-metadata:
-  name: app-nginx
-  namespace: app-nginx
-  annotations:
-    clusterconfig.azure.com/use-managed-source: "true"
-spec:
-  interval: 5m
-  chart:
-    spec:
-      chart: charts/app-nginx
-      sourceRef:
-        kind: GitRepository
-        name: flux-config-02
-        namespace: app-nginx
-      valuesFiles: 
-      - uat-values/app-value.yml
-  values:
-   image: 
-    repository: acreastus01.azurecr.io/nginx
-    tag: 1.0.1
