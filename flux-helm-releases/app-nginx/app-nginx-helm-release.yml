@@ -15,6 +15,5 @@ spec:
         name: flux-config-02
         namespace: app-nginx
       valuesFiles: 
-      - uat-values/app-value.yml  
-      interval: 1m
+      - uat-values/app-value.yml 
 
