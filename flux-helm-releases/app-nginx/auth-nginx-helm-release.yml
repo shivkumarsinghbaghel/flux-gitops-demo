@@ -15,5 +15,6 @@ spec:
         kind: GitRepository
         name: flux-config-02
         namespace: app-nginx
-      valuesFiles: 
+      valuesFiles:
+      - charts/app-nginx/values.yaml
       - uat-values/auth-value.yml
