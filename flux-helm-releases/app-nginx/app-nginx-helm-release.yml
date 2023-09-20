@@ -15,6 +15,7 @@ spec:
         name: flux-config-02
         namespace: app-nginx
       valuesFiles: 
+      - values.yaml
       - uat-values/app-value.yml
   values:
    image: 
