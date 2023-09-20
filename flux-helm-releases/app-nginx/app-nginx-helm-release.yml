@@ -10,6 +10,7 @@ spec:
   chart:
     spec:
       chart: charts/app-nginx
+      reconcileStrategy: Revision      
       sourceRef:
         kind: GitRepository
         name: flux-config-02
