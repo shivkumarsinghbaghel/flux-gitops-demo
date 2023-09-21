@@ -9,7 +9,7 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: charts/app-nginx
+      chart: charts
       reconcileStrategy: Revision      
       sourceRef:
         kind: GitRepository
